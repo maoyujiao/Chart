@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 柱状图颜色属性 -->
+    <integer-array name="histogram_color" >
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/holo_red_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_orange_dark</item>
+        <item>@android:color/black</item>
+        <item>@android:color/holo_blue_dark</item>
+        <item>@color/colorAccent</item>
+    </integer-array>
+    <!-- 饼状图颜色属性 -->
+    <integer-array name="pie_colors" >
+        <item>@color/colorPrimary</item>
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/holo_red_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_orange_dark</item>
+        <item>@android:color/white</item>
+        <item>@android:color/holo_blue_dark</item>
+        <item>@color/colorAccent</item>
+        <item>@android:color/black</item>
+    </integer-array>
+</resources>

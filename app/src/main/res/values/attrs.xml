@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 折线图样式属性 -->
+    <declare-styleable name="zqxchart_line">
+        <!-- 坐标系颜色 -->
+        <attr name="lCoordinatesColor" format="color"/>
+        <!-- 折点颜色 -->
+        <attr name="pointColor" format="color"/>
+        <!-- 折点文字颜色 -->
+        <attr name="pointTextColor" format="color"/>
+        <!-- 折点文字尺寸 -->
+        <attr name="pointTextSize" format="integer"/>
+        <!-- 折线颜色 -->
+        <attr name="lineColor" format="color"/>
+        <!-- x轴文字颜色 -->
+        <attr name="lxTextColor" format="color"/>
+        <!-- y轴文字颜色 -->
+        <attr name="lyTextColor" format="color"/>
+        <!-- x轴文字尺寸 -->
+        <attr name="lxTextSize" format="integer"/>
+        <!-- y轴文字尺寸 -->
+        <attr name="lyTextSize" format="integer"/>
+        <!-- x轴刻度点数量 -->
+        <attr name="lxPointCount" format="integer"/>
+        <!-- y轴刻度点数量 -->
+        <attr name="lyPointCount" format="integer"/>
+        <!-- 折线宽度 -->
+        <attr name="line_width" format="float"/>
+        <!-- 折点尺寸 -->
+        <attr name="point_size" format="float"/>
+        <!-- 折线样式是否闭合 -->
+        <attr name="lPathStyle">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- 柱状图样式属性 -->
+    <declare-styleable name="zqxchart_histogram">
+        <!-- 坐标系颜色 -->
+        <attr name="hCoordinatesColor" format="color"/>
+        <attr name="rectTextColor" format="color"/>
+        <attr name="rectTextSize" format="integer"/>
+        <!-- x轴文字颜色 -->
+        <attr name="hxTextColor" format="color"/>
+        <!-- y轴文字颜色 -->
+        <attr name="hyTextColor" format="color"/>
+        <!-- x轴文字尺寸 -->
+        <attr name="hxTextSize" format="integer"/>
+        <!-- y轴文字尺寸 -->
+        <attr name="hyTextSize" format="integer"/>
+        <!-- x轴刻度点数量 -->
+        <attr name="hxPointCount" format="integer"/>
+        <!-- y轴刻度点数量 -->
+        <attr name="hyPointCount" format="integer"/>
+    </declare-styleable>
+
+</resources>
