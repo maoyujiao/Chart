@@ -1,1 +1,2 @@
 #ZqxChart
+[折线图,统计图](http://git.oschina.net/zqxjava/ZqxChart/blob/master/img/chart1.gif?dir=0&filepath=img%2Fchart1.gif&oid=444bad5391a9d96bc697b7e09b230de2e8086e9d&sha=3e54601ce38ab36f2f82b30b6dc0baa1ddce6e40)
