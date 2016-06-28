@@ -118,7 +118,7 @@
       </declare-styleable>
       //也可以通过代码和 arrays.xml 设置每个x坐标对应柱状图的颜色,代码可以通过新建一个color 数组并调用
           setColors(xxx);
-      //arrays.xml color 个数与数据个数想对应
+      //arrays.xml color 个数与数据个数对应
         <!-- 饼状图颜色属性 -->
         <integer-array name="pie_colors" >
             <item>@color/colorPrimary</item>

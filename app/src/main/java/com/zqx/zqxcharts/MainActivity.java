@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         final LineChartData lineChartData = LineChartData.builder()
                 .setXdata(xdata)
                 .setYdata(ydata)
+                .setCoordinatesColor(getResources().getColor(android.R.color.holo_orange_dark))
                 .setYpCount(7)
                 .setAnimType(Anim.ANIM_ALPHA)
                 .build();

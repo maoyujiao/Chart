@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZqxChart.iml" filepath="$PROJECT_DIR$/ZqxChart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ZqxCharts.iml" filepath="$PROJECT_DIR$/ZqxCharts.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/chart/chart.iml" filepath="$PROJECT_DIR$/chart/chart.iml" />
     </modules>
