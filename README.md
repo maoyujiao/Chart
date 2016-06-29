@@ -145,19 +145,19 @@ gradle：
         </integer-array>
   3.饼状图
   --------
-  目前还未完善 例子在MainActivity中
-  <!-- 饼状图颜色属性 -->
-  <integer-array name="pie_colors" >
-      <item>@color/colorPrimary</item>
-      <item>@android:color/darker_gray</item>
-      <item>@android:color/holo_red_dark</item>
-      <item>@android:color/holo_green_dark</item>
-      <item>@android:color/holo_orange_dark</item>
-      <item>@android:color/white</item>
-      <item>@android:color/holo_blue_dark</item>
-      <item>@color/colorAccent</item>
-      <item>@android:color/black</item>
-  </integer-array>
+      <!-- 饼状图颜色属性 -->
+      <integer-array name="pie_colors" >
+          <item>@color/colorPrimary</item>
+          <item>@android:color/darker_gray</item>
+          <item>@android:color/holo_red_dark</item>
+          <item>@android:color/holo_green_dark</item>
+          <item>@android:color/holo_orange_dark</item>
+          <item>@android:color/white</item>
+          <item>@android:color/holo_blue_dark</item>
+          <item>@color/colorAccent</item>
+          <item>@android:color/black</item>
+      </integer-array>
+   目前还未完善 例子在MainActivity中
   
 待完成
 ======
