@@ -133,21 +133,31 @@ gradle：
       //也可以通过代码和 arrays.xml 设置每个x坐标对应柱状图的颜色,代码可以通过新建一个color 数组并调用
           setColors(xxx);
       //arrays.xml color 个数与数据个数对应
-        <!-- 饼状图颜色属性 -->
-        <integer-array name="pie_colors" >
-            <item>@color/colorPrimary</item>
+        <!-- 柱状图颜色属性 -->
+        <integer-array name="histogram_color" >
             <item>@android:color/darker_gray</item>
             <item>@android:color/holo_red_dark</item>
             <item>@android:color/holo_green_dark</item>
             <item>@android:color/holo_orange_dark</item>
-            <item>@android:color/white</item>
+            <item>@color/histogram_test</item>
             <item>@android:color/holo_blue_dark</item>
             <item>@color/colorAccent</item>
-            <item>@android:color/black</item>
         </integer-array>
   3.饼状图
   --------
   目前还未完善 例子在MainActivity中
+  <!-- 饼状图颜色属性 -->
+  <integer-array name="pie_colors" >
+      <item>@color/colorPrimary</item>
+      <item>@android:color/darker_gray</item>
+      <item>@android:color/holo_red_dark</item>
+      <item>@android:color/holo_green_dark</item>
+      <item>@android:color/holo_orange_dark</item>
+      <item>@android:color/white</item>
+      <item>@android:color/holo_blue_dark</item>
+      <item>@color/colorAccent</item>
+      <item>@android:color/black</item>
+  </integer-array>
   
 待完成
 ======
