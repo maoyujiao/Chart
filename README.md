@@ -2,6 +2,20 @@
 [效果](https://github.com/z4321548/zqxchart/blob/master/img/chart1.gif)
 ![动画效果](https://github.com/z4321548/zqxchart/blob/master/img/chart1.gif "折线图，柱状图")
 
+maven：
+------
+    <dependency>
+        <groupId>com.zqx.chart</groupId>
+        <artifactId>chart</artifactId>
+        <version>0.1</version>
+        <type>pom</type>
+    </dependency>
+
+
+gradle：
+-------
+    compile 'com.zqx.chart:chart:0.1'
+
 使用方法：
 ==========
   1.折线图
