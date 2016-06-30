@@ -199,7 +199,6 @@ gradle：
                 <enum name="ALPHA" value="1"></enum>
             </attr>
         </declare-styleable>
-   目前还未完善 例子在MainActivity中
   
 待完成
 ======
