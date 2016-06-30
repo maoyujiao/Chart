@@ -1,7 +1,7 @@
 #ZqxChart
 [效果](https://github.com/z4321548/zqxchart/blob/master/img/chart1.gif)
 ![动画效果](https://github.com/z4321548/zqxchart/blob/master/img/chart1.gif "折线图，柱状图")
-
+![输入图片说明](http://git.oschina.net/uploads/images/2016/0630/141029_c9b91675_372342.gif "饼状图")
 maven：
 ------
     <dependency>
