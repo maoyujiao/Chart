@@ -18,7 +18,7 @@ public class ChartData {
     protected int yTextColor;
     protected int yMax;
     protected int interval;
-    protected int animType = Anim.ANIM_TRANSLATE;
+    protected int animType = -2;
 
     protected ChartData(){}
 

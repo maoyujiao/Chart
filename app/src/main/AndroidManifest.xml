@@ -15,6 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChartActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PieActivity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -45,7 +45,7 @@ public class Chart extends View{
     protected boolean isAnim = true;
     protected Anim[] anims;//动画数组
     protected long interval = 100;//动画执行间隔
-    private int animType = Anim.ANIM_TRANSLATE;
+    protected int animType = -2;//动画
 
     public Chart(Context context) {
         super(context);
@@ -189,9 +189,9 @@ public class Chart extends View{
                 for (int i=0;i<xpCount;i++){
                     float dataX = oX+xCoordinates[i];
                     float dataY = oY-yData[i]/yMax*yCoordinates[yCoordinates.length-1];
-                    Anim anim = new Anim(dataX,dataY,dataX,oY);
+                    Anim anim = new Anim(dataX,dataY,dataX,dataY);
                     anim.setAnimation(new TranslateAnim());
-                    anim.setVelocity(interval*2);
+                    anim.setVelocity(interval);
                     anims[i] = anim;
                 }
                 break;
@@ -242,7 +242,8 @@ public class Chart extends View{
         this.x_text_color = getFinalValue(this.x_text_color,chartData.getxTextColor());
         this.y_text_color = getFinalValue(this.y_text_color,chartData.getyTextColor());
         this.interval = getFinalValue((int) this.interval,chartData.getInterval());
-        this.animType = chartData.getAnimType();
+        this.animType = chartData.getAnimType() != -2 ? chartData.getAnimType()
+                : this.animType;
         this.yMax = chartData.getyMax() != 0f ? chartData.getyMax() : this.yMax;
     }
     /*
@@ -268,7 +269,7 @@ public class Chart extends View{
             }
         }
     };
-    /*`
+    /*
      * 更新数据并重绘
      */
     public void update(ChartData chartData){

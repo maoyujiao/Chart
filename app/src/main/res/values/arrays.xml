@@ -17,7 +17,7 @@
         <item>@android:color/holo_red_dark</item>
         <item>@android:color/holo_green_dark</item>
         <item>@android:color/holo_orange_dark</item>
-        <item>@android:color/white</item>
+        <item>@android:color/holo_green_light</item>
         <item>@android:color/holo_blue_dark</item>
         <item>@color/colorAccent</item>
         <item>@android:color/black</item>

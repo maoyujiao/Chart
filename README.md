@@ -145,8 +145,35 @@ gradle：
         </integer-array>
   3.饼状图
   --------
-      <!-- 饼状图颜色属性 -->
-      <integer-array name="pie_colors" >
+        饼状图动画效果目前只支持alpha
+        code:
+            PieChart pieChart = (PieChart) findViewById(R.id.piechart);
+            int[] colors = new int[]{Color.RED,Color.BLACK,Color.BLUE,Color.GREEN,Color.GRAY,
+                    Color.YELLOW,Color.LTGRAY,Color.CYAN,Color.MAGENTA};
+            PieChartData pieChartData = PieChartData.builder()
+                    .setDatas(datas)
+                    //.setColors(colors)
+                    .setTextColor(Color.RED)
+                    //.setTextSize(36)
+                    //.setSeparationDegree(3)
+                    .setPieItemClickListener(new OnPieItemClickListener() {
+                        @Override
+                        public void onPieItemClick(int position) {
+                            Toast.makeText(MainActivity.this,"click->"+position,Toast.LENGTH_SHORT).show();
+                        }
+                    }).build();
+            pieChart.setChartData(pieChartData);
+        xml:
+            <com.zqx.chart.view.PieChart
+                  android:id="@+id/piechart"
+                  android:layout_width="match_parent"
+                  android:padding="5dp"
+                  android:layout_height="400dp"
+                  chart:textColor="@color/colorAccent"
+                  chart:textSize="40"
+                  />
+        <!-- 饼状图颜色属性 -->
+        <integer-array name="pie_colors" >
           <item>@color/colorPrimary</item>
           <item>@android:color/darker_gray</item>
           <item>@android:color/holo_red_dark</item>
@@ -156,9 +183,24 @@ gradle：
           <item>@android:color/holo_blue_dark</item>
           <item>@color/colorAccent</item>
           <item>@android:color/black</item>
-      </integer-array>
+        </integer-array>
+        饼状图自定义属性
+        <declare-styleable name="zqxchart_pie">
+            <!-- 间隔角度 -->
+            <attr name="separationDegree" format="integer"/>
+            <!-- 文字颜色 -->
+            <attr name="textSize" format="integer"/>
+            <!-- 文字颜色 -->
+            <attr name="textColor" format="color"/>
+            <!-- 动画效果 -->
+            <attr name="panimType">
+                <enum name="NONE" value="-1"></enum>
+                <!--enum name="TRANSLATE" value="0"></enum-->
+                <enum name="ALPHA" value="1"></enum>
+            </attr>
+        </declare-styleable>
    目前还未完善 例子在MainActivity中
   
 待完成
 ======
-折线图和柱状图的多组数据显示，饼状图的完善。
+折线图和柱状图的多组数据显示。

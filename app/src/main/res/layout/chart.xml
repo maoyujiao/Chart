@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chart="http://schemas.android.com/apk/res/com.zqx.zqxcharts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.zqx.chart.view.Histogram
+        android:layout_marginTop="10dp"
+        android:id="@+id/histogramchart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="5dp"
+        chart:hCoordinatesColor="@color/colorPrimary"
+        chart:hxTextColor="@color/colorPrimaryDark"
+        chart:hyTextColor="@color/colorPrimaryDark"
+        />
+
+        <com.zqx.chart.view.LineChart
+            android:layout_marginTop="5dp"
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="5dp"
+            chart:lCoordinatesColor="@color/colorAccent"
+            chart:lxTextColor="@color/colorAccent"
+            chart:lyTextColor="@color/colorAccent"
+            chart:pointColor="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="update"/>
+</LinearLayout>

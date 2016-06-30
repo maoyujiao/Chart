@@ -9,6 +9,7 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 
 import com.zqx.chart.R;
+import com.zqx.chart.anim.Anim;
 import com.zqx.chart.data.ChartData;
 import com.zqx.chart.data.LineChartData;
 
@@ -59,6 +60,7 @@ public class LineChart extends Chart {
         ypCount = types.getInteger(R.styleable.zqxchart_line_lyPointCount,5);
         line_width = types.getFloat(R.styleable.zqxchart_line_line_width,5.0f);
         point_size = types.getFloat(R.styleable.zqxchart_line_point_size,10.0f);
+        animType = types.getInteger(R.styleable.zqxchart_line_lanimType, Anim.ANIM_NONE);
         line_path_style = types.getInteger(R.styleable.zqxchart_line_lPathStyle,0);
         types.recycle();
     }

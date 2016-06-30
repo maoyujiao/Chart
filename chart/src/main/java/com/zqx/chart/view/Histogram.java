@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 
 import com.zqx.chart.R;
+import com.zqx.chart.anim.Anim;
 import com.zqx.chart.data.ChartData;
 import com.zqx.chart.data.HistogramData;
 
@@ -50,6 +51,7 @@ public class Histogram extends Chart {
         xpCount = types.getInteger(R.styleable.zqxchart_histogram_hxPointCount,7);
         ypCount = types.getInteger(R.styleable.zqxchart_histogram_hyPointCount,5);
         rect_color = getResources().getIntArray(R.array.histogram_color);
+        animType = types.getInteger(R.styleable.zqxchart_histogram_hanimType, Anim.ANIM_NONE);
         types.recycle();
     }
 

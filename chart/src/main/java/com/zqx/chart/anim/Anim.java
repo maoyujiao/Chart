@@ -5,6 +5,7 @@ package com.zqx.chart.anim;
  * Created by zqx on 16/6/27.
  */
 public class Anim {
+    public static final int ANIM_NONE = -1;//平移动画
     public static final int ANIM_TRANSLATE = 0;//平移动画
     public static final int ANIM_ALPHA = 1;//淡入动画
     private float finalX;//动画结束x坐标
