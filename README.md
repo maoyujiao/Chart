@@ -34,7 +34,7 @@ gradle：
       <?xml version="1.0" encoding="utf-8"?>
       <LinearLayout
           xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:chart="http://schemas.android.com/apk/res/com.zqx.zqxcharts" <!-- 此处指定自己到包名 -->
+          xmlns:chart="http://schemas.android.com/apk/res/com.zqx.zqxcharts" <!-- 此处指定自己的包名 -->
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:orientation="vertical">
