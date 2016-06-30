@@ -37,7 +37,7 @@ public class ChartActivity extends AppCompatActivity {
                 .setXdata(xdata)
                 .setYdata(ydata)
                 .setYpCount(7)
-                .setAnimType(Anim.ANIM_NONE)
+                .setAnimType(Anim.ANIM_ALPHA)
                 .build();
         histogramChart.setChartData(histogramData);
         findViewById(R.id.update).setOnClickListener(new View.OnClickListener() {
